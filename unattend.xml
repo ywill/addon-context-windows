@@ -50,34 +50,35 @@
                 <!--
                     Password to be used only during initial provisioning.
                     Must be reset with final Sysprep.
-                <AdministratorPassword>
-                    <Value>4dm1n1str4t0r.</Value>
+                -->
+		<AdministratorPassword>
+                    <Value>S3m3nt4r4!</Value>
                     <PlainText>true</PlainText>
                 </AdministratorPassword>
-                -->
+               
                 <!-- The following is needed on a client OS -->
-                <!--
+                
                 <LocalAccounts>
                     <LocalAccount wcm:action="add">
-                        <Description>Admin user</Description>
-                        <DisplayName>Admin</DisplayName>
-                        <Group>Administrators</Group>
-                        <Name>Admin</Name>
+                        <Description>HyperCX</Description>
+                        <DisplayName>HyperCX</DisplayName>
+                        <Group>Virtalus</Group>
+                        <Name>hypercx</Name>
                     </LocalAccount>
                 </LocalAccounts>
-                -->
+                
             </UserAccounts>
-            <!--
+            
             <AutoLogon>
                 <Password>
-                    <Value>4dm1n1str4t0r.</Value>
+                    <Value>S3m3nt4r4!</Value>
                     <PlainText>true</PlainText>
                 </Password>
                 <Enabled>true</Enabled>
                 <LogonCount>50</LogonCount>
-                <Username>Administrator</Username>
+                <Username>hypercx</Username>
             </AutoLogon>
-            -->
+            
             <ComputerName>*</ComputerName>
         </component>
         <component name="Microsoft-Windows-International-Core" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
